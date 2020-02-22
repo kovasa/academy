@@ -12,6 +12,7 @@ def size(url):
     resp = requests.get(url)
     if resp:
         return len(resp.text)
+    return 0
 
 
 print("number of characters:", size('https://google.com'))
